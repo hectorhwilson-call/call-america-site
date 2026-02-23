@@ -1,18 +1,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
 }
 
+/* NAVBAR */
 .navbar {
-    position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(0,0,0,0.6);
-    z-index: 1000;
+    background-color: #0c1e33;
 }
 
 .logo img {
@@ -26,52 +23,62 @@ body {
     font-size: 14px;
 }
 
+.nav-links a:hover {
+    color: #4da6ff;
+}
+
+/* HERO */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,40,0.7), rgba(0,0,40,0.7)),
-            url('https://images.unsplash.com/photo-1557804506-669a67965ba0') center/cover no-repeat;
+    background: url("images/hero.jpg") no-repeat center center/cover;
+    height: 600px;
     display: flex;
     align-items: center;
-    padding: 0 60px;
+    padding-left: 80px;
+    color: white;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #3a7bd5;
+.btn-primary {
+    background-color: #4da6ff;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
+.btn-primary:hover {
+    background-color: #2d8cff;
+}
+
+/* SERVICES */
 .services {
-    background: #f4f6fa;
-    color: #333;
+    padding: 80px 20px;
     text-align: center;
-    padding: 80px 40px;
+    background: #f4f4f4;
 }
 
 .services h2 {
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    margin-bottom: 40px;
     color: #777;
+    margin-bottom: 40px;
 }
 
 .cards {
@@ -86,27 +93,34 @@ body {
     padding: 25px;
     width: 250px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* GLOBAL */
 .global {
-    background: linear-gradient(#0b1f3a, #08172b);
+    background: #0c1e33;
+    color: white;
+    padding: 60px 20px;
     text-align: center;
-    padding: 80px 20px;
 }
 
 .global h2 {
-    font-size: 32px;
+    margin-bottom: 15px;
 }
 
 .countries {
-    font-size: 20px;
-    margin: 15px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+/* FOOTER */
 footer {
-    background: #061323;
     text-align: center;
     padding: 20px;
-    font-size: 14px;
+    background: #081423;
+    color: white;
 }
